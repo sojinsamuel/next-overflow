@@ -4,6 +4,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 
 import "./globals.css";
+import { ProvideTheme } from "@/context/ProvideTheme";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,7 +43,7 @@ export default function RootLayout({
         }}
       >
         <body className={`${inter.variable} ${SpaceMonoFont.variable}`}>
-          {children}
+          <ProvideTheme>{children}</ProvideTheme>
         </body>
       </ClerkProvider>
     </html>
