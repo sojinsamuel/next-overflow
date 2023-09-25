@@ -22,7 +22,7 @@ body {
   }
 
   .card-container {
-    @apply bg-light-901 dark:dt-gradient shadow-light-101 dark:shadow-dark-101;
+    @apply bg-light-901 dark:dt-gradient-bg shadow-light-401 dark:shadow-dark-101;
   }
 
   .button-primary {
