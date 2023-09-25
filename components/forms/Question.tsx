@@ -229,17 +229,15 @@ const Question = ({ mongoUserId }: Props) => {
         />
         <Button
           type="submit"
-          className="primary-gradient w-fit !text-light-901"
+          className="w-fit bg-[#FF7101] !text-light-901"
           disabled={isSubmitting}
         >
-          {/* {isSubmitting ? (
+          {isSubmitting ? (
             <>{type === "edit" ? "Editing..." : "Posting..."}</>
           ) : (
             <>{type === "edit" ? "Edit Question" : "Ask a Question"}</>
-          )} */}
-          Ask a Question
+          )}
         </Button>
-        asdf
       </form>
     </Form>
   );
